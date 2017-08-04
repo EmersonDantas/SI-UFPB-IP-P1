@@ -1,0 +1,6 @@
+Carregar algoritimo de divisão(algoritimo1)
+
+1.Receber número e atribuir a A
+2.Receber número e atribuir a B
+3.Dividir A por B, se resto R for igual a 0, mostrar mensagem "São multiplos"
+4.Se não, Mostrar mensagem "Não são multiplos"

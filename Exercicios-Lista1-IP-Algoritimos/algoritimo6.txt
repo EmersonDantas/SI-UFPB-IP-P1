@@ -1,0 +1,17 @@
+Algoritmo que lê um nº inteiro e mostra uma mensagem indicando se este número é
+par ou ímpar, e se é positivo ou negativo.
+
+Carregar algoritimo de divisão(algoritimo1)
+
+1.P inicialmente é 0
+2.IMP inicialmente é 0
+3.POSI inicialmente é 0
+4.NEG inicialmente é 0
+5.Receber número que será "analizado" em A
+6.Dividir A por 2 e guardar resto em R
+7.Se R for igual a zero, atribuir 1 a P, se não, atribuir 1 a IMP
+8.Se A for maior que zero, atribuir 1 a POSI, se não, atribuir 1 a NEG
+9.Se P for igual a 1, mostrar PAR
+10.Se IMP for igual a 1, mostrar IMPAR
+11.Se POSI for igual a 1, mostrar POSITIVO
+12.Se NEG for igual a 1, mostrar NEGATIVO

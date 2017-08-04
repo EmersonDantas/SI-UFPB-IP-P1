@@ -1,0 +1,9 @@
+Algoritmo que lê a idade de uma pessoa expressa em dias e mostra expressa em
+anos, meses e dias.
+
+Carregar algoritimo de divisão(algoritimo1)
+
+1.Receber idade expressa em dias e atribuir a Dias
+2.Dividir Dias por 365 e atribuir quociente a Anos e resto a Dias
+3.Dividir Dias por 30 e atribuir quociente a Meses e resto a Dias
+4.Parar e Mostrar Anos, Meses e Dias

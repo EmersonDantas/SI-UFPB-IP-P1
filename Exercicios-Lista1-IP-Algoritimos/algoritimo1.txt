@@ -1,0 +1,27 @@
+﻿algoritimo = instrução para divisão entre dois números
+
+
+
+dividendo = A
+divisor = B
+
+quociente = Q
+
+resto = R
+
+
+
+1. receber número e atribuir em A
+
+2. receber número e atribuir em B
+
+3. atribuir 0 para Q
+
+4. atribuir A para R
+5. se B for maior R, parar e mostrar Q e R. Caso contrario, ir para instrução 6
+
+6. subtrair B de R e atribuir o resultado para R
+
+7. somar 1 em Q
+
+8. Voltar ao passo 5.

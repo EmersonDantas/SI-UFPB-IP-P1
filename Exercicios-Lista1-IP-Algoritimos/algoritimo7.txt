@@ -1,0 +1,14 @@
+Algoritmo que lê a idade de uma pessoa expressa em anos, meses e dias e mostra
+expressa apenas em dias.
+
+Carregar algoritimo de multiplicação(algoritimo2)
+
+1.Anos inicialmente é 0
+2.Meses inicialmente é 0
+3.Dias inicialmente é 0
+4.Receber anos e atribuir a Anos
+5.Receber meses e atribuir a Meses
+6.Receber dias e atribuir a Dias
+7.Multiplicar Anos por 365 e atribuir a Dias
+8.Multiplicar Meses por 30 e atribuir a Dias
+9.Parar e mostar Dias

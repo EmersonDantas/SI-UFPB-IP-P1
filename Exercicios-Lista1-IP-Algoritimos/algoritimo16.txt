@@ -1,0 +1,14 @@
+Duração em horas = DURH
+Duração em minutos = DURM
+
+1.Receber hora inicial em HI
+2.Receber hora final em HF
+3.Receber minuto inicial em MI
+4.Receber minuto final em MF
+5.Se HI for maior que HF ir para 6., se não, ir para 7.
+6.Somar 24 a HF, subtrair HI de HF e atribuir resultado a DURH, ir para 8.
+7.Subtrair HI de HF e antribuir a DURH, ir para 8.
+8.Se MI for maior que MF ir para 9., se não, ir para 10.
+9.Subtrair 1 de DURH e atribuir a DURH, somar 60 a MF e subtrair MI de MF e atribuir resultado a DURM e ir para 11.
+10.Subtrair MI de MF e atribuir a DURM, ir para 11.
+11.Parar e Mostrar DURH "horas" e DURM "minutos"

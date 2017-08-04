@@ -1,0 +1,14 @@
+Carregar algoritimo de divisão(algoritimo1)
+Carregar algoritimo de multiplicação(algoritimo2)
+
+
+1. MEDIA inicialmente é 0
+2. Receber nota nº 1 e atribuir a N1
+3. Receber nota nº 2 e atribuir a N2
+4. Receber nota nº 3 e atribuir a N3
+5. Multiplicar N1 por 2 e atribuir resultado a N1N
+6. Multiplicar N2 por 3 e atribuir resultado a N2N
+7. Multiplicar N3 por 5 e atribuir resultado a N3N
+8. Somar N1N com N2N e somar resultado a N3N
+9. Dividir N3N por 10 e atribuir resultado a MEDIA
+10. Parar e mostrar MEDIA

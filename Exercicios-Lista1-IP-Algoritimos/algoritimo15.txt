@@ -1,0 +1,30 @@
+﻿Algoritmo que lê um valor em reais e calcula qual o menor número possível de
+notas de 100, 50, 10, 5 e 1 em que o valor lido pode ser decomposto. Escrever o valor lido e a
+relação de notas necessárias
+
+
+
+Carregar algoritimo de divisão(algoritimo1)
+
+1.N100, N50, N10, N5 e N1 inicialmente são 0
+2. receber número e atribuir a A
+
+3. dividir A por 100 e atribuir quociente a N100 e o resto a R
+
+4. se R for igual a 0, parar e mostrar N100, N50, N10, N5 e N1, se não, ir para 5.
+
+5. dividir R por 50 e atribuir quociente a N50 e o resto a R
+
+6. se R for igual a 0, parar e mostrar N100, N50, N10, N5 e N1, se não, ir para 7.
+
+7. dividir R por 10 e atribuir quociente a N10 e o resto a R
+
+8. se R for igual a 0, parar e mostrar N100, N50, N10, N5 e N1, se não, ir para 9.
+
+9. dividir R por 5 e atribuir quociente a N5 e o resto a R
+
+10. se R for igual a 0, parar e mostrar N100, N50, N10, N5 e N1, se não, ir para 11.
+
+11. atribuir R a N1
+
+12. Mostrar N100, N50, N10, N5 e N1.

@@ -1,0 +1,10 @@
+Carregar algoritimo de divisão(algoritimo1)
+
+1.Receber nota 1 e atribuir a N1
+2.Receber nota 2 e atribuir a N2
+3.Receber nota 3 e atribuir a N3
+4.Somar N1 com N2 e N3 e atribuir resultado a NN
+5.Dividir NN por 3 e atribuir a RES
+6.Se RES for maior ou igual a 6, mostrar mensagem "APROVADO"
+7.Se não, mostrar mensagem "REPROVADO"
+8.Parar algorítimo

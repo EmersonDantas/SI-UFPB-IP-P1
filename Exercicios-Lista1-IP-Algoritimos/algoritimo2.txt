@@ -1,0 +1,7 @@
+﻿Algoritimo de instrução de multiplicação entre dois números
+
+1.Receber um número na variavel A
+2.Receber um número na variavel B
+3.inicialmente atribuir zero a varíavel resultm
+4.Somar A com resultm, e subtrair 1 de B
+5.Se B for maior que zero, voltar a instrução 4, se B for igual a zero, mostar resultm.

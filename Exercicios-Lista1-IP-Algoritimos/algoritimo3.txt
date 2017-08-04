@@ -1,0 +1,16 @@
+﻿Algoritimo de radiação
+
+
+
+Carregar algoritimo de multiplicação(algoritimo2)
+
+1. variável CONT inicialmente é 1
+
+2. RES inicialmente é 0
+
+3. receber número do qual quer saber a raiz e atribuir em A
+
+4. multiplicar CONT por ele mesmo e atribuir resultado a RES
+5. se RES for igual a A, parar e mostrar CONT
+
+6. se não, somar 1 a CONT e voltar a instrução 4.

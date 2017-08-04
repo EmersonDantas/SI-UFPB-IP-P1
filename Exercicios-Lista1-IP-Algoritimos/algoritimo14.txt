@@ -1,0 +1,6 @@
+1.Receber idade do jogador em IDD
+2.Se IDD for maior ou igual a 5 e menor ou igual a 7, parar e mostrar mensagem "INFANTIL A", se não, ir para 3.
+3.Se IDD for maior ou igual a 8 e menor ou igual a 10, parar e mostrar mensagem "INFANTIL B", se não, ir para 4.
+4.Se IDD for maior ou igual a 11 e menor ou igual a 13, parar e mostrar mensagem "JUVENIL A", se não, ir para 5.
+5.Se IDD for maior ou igual a 14 e menor ou igual a 17, parar e mostrar mensagem "JUVENIL B", se não, ir para 6.
+6.Se IDD for maior ou igual a 18, parar e mostrar mensagem "ADULTO"

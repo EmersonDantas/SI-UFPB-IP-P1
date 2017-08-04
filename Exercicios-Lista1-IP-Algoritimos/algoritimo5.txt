@@ -1,0 +1,9 @@
+Algoritimo para saber o maior número entre três números
+
+1.Receber número e atribuir a A
+2.Receber número e atribuir a B
+3.Receber número e atribuir a C
+4.Res inicialmente é 0
+5.Se A for maior que B e C, atribuir A em Res, se não, ir para intrução 6.
+6.Se B for maior que C, atribuir B e Res, se naõ, atribuir C a res
+7.Parar e Mostar Res

@@ -1,0 +1,11 @@
+Algoritmo que lê o tempo de duração de um evento em uma fábrica expressa em
+segundos e mostra expresso em horas, minutos e segundos.
+
+Carregar algoritimo de divisão(algoritimo1)
+
+SEG, MIN e HOR inicialmente são 0
+
+1. Receber valor do tempo em segundos e atribuir a SEG
+2. Se SEG for maior que 60, dividir SEG por 60, atribuir quociente a MIN e resto a SEG e ir para instrução 3, Se não, parar e mostrar SEG
+3. Se MIN for maior que 60, dividir MIN por 60, atribuir quociente a HOR e resto a MIN e ir para instrução 4, Se não, parar e mostrar MIN e SEG
+4. Parar e mostrar HOR, MIN e SEG

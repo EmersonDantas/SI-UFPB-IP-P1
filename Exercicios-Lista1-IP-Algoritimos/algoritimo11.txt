@@ -1,0 +1,15 @@
+Algoritmo que lê o custo de fábrica de um carro, soma as taxas e impostos e escreve o custo ao consumidor.
+
+Carregar algoritimo de multiplicação(algoritimo2)
+
+Valor de fábrica: VF
+Porcentagem do distribuidor: PD
+Porcentagem de impostos: IM
+valor do consumidor final: VC
+
+
+1.Receber valor de fabrica em VF
+2.Multiplicar VR por 0.28 e atribuir resultado a PD
+3.Multiplicar VR por 0.45 e atribuir resultado a IM
+4.Somar VR com PD e IMP e atribuir resultado a VC
+5.Parar e mostrar VC

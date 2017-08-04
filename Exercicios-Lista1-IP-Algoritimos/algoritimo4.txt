@@ -1,0 +1,10 @@
+Carregar algoritimo de multiplicação(algoritimo2)
+Carregar algoritimo de divisão(algoritimo1)
+
+1.Receber número em N
+2.TMP inicialmente é 0
+3.Copiar N e acrescentar a TMP
+4.Somar TMP + 1 e acrescentar a TMP
+5.Multiplicar N por TMP e atribuir resultado a PRT
+6.Dividir PRT por 2 e acrescentar a RES
+7.Parar e mostrar RES
