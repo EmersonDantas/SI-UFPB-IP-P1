@@ -10,6 +10,6 @@ if D<0 :
         exit()
 else :
     sqrt(D)
-    X1=((-B+D)/(2*A))
-    X2=((-B-D)/(2*A))
+    X1=((-B+sqrt(D))/(2*A))
+    X2=((-B-sqrt(D))/(2*A))
     print("X':",X1,"\n""X'':",X2)
