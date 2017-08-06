@@ -1,4 +1,4 @@
-![alt tag](https://s25.postimg.org/8h0vf8gzz/SI_Sistemas_de_Informac_a_o.png)
+![alt tag](https://raw.githubusercontent.com/EmersonDantas/SI-UFPB-IP-P1/master/sigithub.png)
 
 **Sistemas de informação - UFPB - Campus IV**
 
