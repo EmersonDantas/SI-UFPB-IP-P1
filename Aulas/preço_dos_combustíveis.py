@@ -16,4 +16,4 @@ if quantcomb>=30:
     PROMO='Parabéns! Você ganhou uma troca de óleo gratis!'
 else: PROMO='Você não ganhou a troca de óleo gratis. :('
 
-print('Total a pagar: %.2f. %s'%(preco,PROMO))
+print('Total a pagar: R${p:.2f}.\n{pr}'.format(p=preco,pr=PROMO))
