@@ -1,3 +1,4 @@
+#EMERSON DANTAS S.I IP-P1
 salario = float(input('Digite seu salário atual:'))
 imposto_1000 = 0.17
 imposto_geral = 0.06
