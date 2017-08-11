@@ -1,4 +1,4 @@
-#EMERSON DANTAS S.I IP-P1
+# EMERSON DANTAS S.I IP-P1
 consumo = float(input('Digite o consumo de energia em kWh:'))
 tipo = str.lower(input('Digite o tipo de instalação conforme a tabela abaixo:\nR para Residências;\nI para indústrias\nC para comércios.\n'))
 if tipo == 'r':
@@ -18,5 +18,5 @@ elif tipo == 'c':
         preco = 0.55
 else:
     print('Tipo de instalação inválido!')
-pagar = consumo*preco
-print('Você deverá pagar R${r:.2f}'.format(r=pagar))
+    exit()
+print('Você deverá pagar R${r:.2f}'.format(r=(consumo * preco)))
