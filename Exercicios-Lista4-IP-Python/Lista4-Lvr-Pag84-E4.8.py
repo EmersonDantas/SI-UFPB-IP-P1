@@ -11,5 +11,5 @@ elif operador == '*':
 elif operador == '/':
     resultado = num1 / num2
 else:
-    print('operador inválido')
+    print('Operador inválido!')
 print('O resultado da operação realizada foi: {r}'.format(r=resultado))
