@@ -1,11 +1,11 @@
 #EMERSON DANTAS S.I IP-P1
 QP = int(input('Quantas pessoas:'))
-QO = int(QP / 42)
+QO = QP // 42
 QOR = QP % 42
-QV = int(QOR / 20)
+QV = QOR // 20
 QVR = QOR % 20
 if QVR <= 20:
-    QV = QV + 1
+    QV += 1
 VO = QO * 350
 VV = QV * 200
 VT = (VO + VV) / QP
