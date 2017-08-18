@@ -10,7 +10,7 @@ VO = QO * 350
 VV = QV * 200
 VT = (VO + VV) / QP
 if QV >= 1 and QO <= 0:
-    print('{QV} van(s)\nR${VT:.2f} por pessoa.'.format(QV=int(QV), VT=VT))
+    print('{QV} van(s)\nR${VT:.2f} por pessoa.'.format(QV=QV, VT=VT))
 elif QO >=1 and QV <= 0:
     print('{QO} ônibus\nR${VT:.2f} por pessoa.'.format(QO=QO, VT=VT))
 else:
