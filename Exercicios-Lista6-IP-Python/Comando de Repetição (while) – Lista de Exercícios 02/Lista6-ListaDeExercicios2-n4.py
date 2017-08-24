@@ -6,7 +6,8 @@ while numero != 100:
     if numero % 2 == 0 and numero != 100:
         aux += 1
         soma += numero
-        media = soma // aux
-    else:
-        print('Não foram lidos números pares!')
-print('Média da soma dos números pares: {m3}'.format(m3=media))
+if aux >= 1:
+    media = soma // aux
+    print('Média da soma dos números pares: {m3}'.format(m3=media))
+elif aux == 0:
+    print('Não foram lidos números pares!')
