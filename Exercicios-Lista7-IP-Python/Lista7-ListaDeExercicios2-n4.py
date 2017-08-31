@@ -1,14 +1,8 @@
-itens = 1
-contMarfim = 0
-contBranco = 0
-contBrastemp = 0
-contElectrolux = 0
-quantiMoveis = 0
-quantiEletros = 0
-quantiDeco = 0
-contMoveis = 0
-contEletro = 0
-contDeco = 0
+itens = int(input('Quantidade de itens:\n'))
+contMarfim, contBranco = 0 , 0
+contBrastemp, contElectrolux = 0, 0
+quantiMoveis, quantiEletros, quantiDeco = 0, 0, 0
+contMoveis, contEletro, contDeco = 0, 0, 0
 totalPreco = 0
 for a in range(itens):
     tipodeProduto = str.lower(input('Tipo de produto:\n'))
@@ -19,9 +13,6 @@ for a in range(itens):
             contMarfim += 1
         elif cor == 'branco':
             contBranco += 1
-        else:
-            print('Cor inválida!')
-            exit()
         totalMarfim = (contMarfim / contMoveis) * 100
         totalBranco = (contBranco / contMoveis) * 100
     elif tipodeProduto == 'eletrodoméstico':
@@ -31,9 +22,6 @@ for a in range(itens):
             contBrastemp += 1
         elif marca == 'electrolux':
             contElectrolux += 1
-        else:
-            print('Marca inválida!')
-            exit()
         totalElectrolux = (contElectrolux / contEletro) * 100
         totalBrastemp = (contBrastemp / contEletro) * 100
     elif tipodeProduto == 'decoração':
@@ -41,13 +29,9 @@ for a in range(itens):
         descricao = str(input('Descrição:\n'))
         preco = float(input('Preço:\n'))
         totalPreco += preco
-    else:
-        print('Entrada inválida!')
-        exit()
 if contMoveis > 0 and contEletro == 0 and contDeco == 0:
     print('Percentuais: {m:.2f}% Marfim, {b:.2f}% Branco'.format(m = totalMarfim, b = totalBranco))
-    print('Nenhum eletrodoméstico vendido\n'
-        'Nenhum objeto de decoração vendido')
+    print('Nenhum eletrodoméstico vendido\nNenhum objeto de decoração vendido')
 elif contEletro > 0 and contDeco == 0 and contMoveis == 0:
     if contBrastemp > contElectrolux or contElectrolux > contBrastemp:
         print('Percentuais: {e:.2f}% Electrolux {b:.2f}% Brastemp'.format(e = totalElectrolux, b = totalBrastemp))
@@ -58,8 +42,7 @@ elif contDeco > 0 and contMoveis == 0 and contEletro == 0:
         print('Foi vendido somente 1 decoração: {d}\nPreço = R${p:.2f}'.format(d = descricao, p = preco))
     else:
         print('Preço médio de decoração: R${d:.2f}'.format(d = totalPreco / contDeco))
-        print('Nenhum móvel foi vendido'
-            'Nenhum eletrodoméstico vendido')
+        print('Nenhum móvel foi vendido\nNenhum eletrodoméstico vendido')
 elif contMoveis > 0 and contEletro > 0 and contDeco == 0:
     print('Percentuais: {m:.2f}% Marfim, {b:.2f}% Branco'.format(m=totalMarfim, b=totalBranco))
     print('Percentuais: {e:.2f}% Electrolux {b:.2f}% Brastemp'.format(e=totalElectrolux, b=totalBrastemp))
