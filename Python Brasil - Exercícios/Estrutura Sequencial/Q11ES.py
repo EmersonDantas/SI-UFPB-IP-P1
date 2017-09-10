@@ -1,0 +1,6 @@
+num1 = int(input('Digite um número inteiro: '))
+num2 = int(input('Digite outro número inteiro: '))
+num3 = float(input('Digite um número real: '))
+print('A: ',(num1*2)*(num2/2))
+print('B: ',(num1*3)+num3)
+print('C: ',num3**3)
