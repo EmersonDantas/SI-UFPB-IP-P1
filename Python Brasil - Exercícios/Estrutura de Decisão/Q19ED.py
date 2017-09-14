@@ -14,4 +14,9 @@ if unidade > 1:
     nunidade = 'unidades'
 else:
     nunidade = 'unidade'
-print('{} {};\n{} {};\n{} {}.'.format(centena,ncentena,dezena,ndezena,unidade,nunidade))
+if centena > 0:
+    print('{} {}'.format(centena,ncentena))
+if dezena > 0:
+    print('{} {}'.format(dezena,ndezena))
+if unidade > 0:
+    print('{} {}'.format(unidade,nunidade))
