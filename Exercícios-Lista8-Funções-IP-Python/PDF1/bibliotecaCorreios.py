@@ -15,7 +15,7 @@ def validaTipoItem(item):
         return False
 
 def validaPeso(peso):
-    if peso > 0:
+    if peso >= 0:
         return True
     else:
         return False
@@ -40,13 +40,11 @@ def validaEmbalagem(embalagem):
         return False
 
 def calculaCustoEmbalagem(embalagem):
-    if embalagem == 'média':
-        embalagem = media
 
     if embalagem == pequena:
         precoEmbalagem = 4
 
-    elif embalagem == media:
+    elif embalagem == media or embalagem == 'média':
         precoEmbalagem = 7
 
     else:
@@ -60,7 +58,7 @@ def validaEntrega(entrega):
     else:
         return False
 
-def calculaCustoItem(entrega):
+def calculaCustoEntrega(entrega):
     if entrega == sedex:
         precoEntrega = 5
     elif entrega == sedex10:

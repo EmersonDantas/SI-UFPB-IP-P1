@@ -10,7 +10,7 @@ if bibliotecaCorreios.validaTipoItem(item):
     if bibliotecaCorreios.validaPeso(peso):
         
         gramas = bibliotecaCorreios.convertePeso(peso)
-        r = bibliotecaCorreios.calculaCustoItem(gramas, item)
+        precoTotal = bibliotecaCorreios.calculaCustoItem(gramas, item)
         
         print(precoTotal)
     else:
