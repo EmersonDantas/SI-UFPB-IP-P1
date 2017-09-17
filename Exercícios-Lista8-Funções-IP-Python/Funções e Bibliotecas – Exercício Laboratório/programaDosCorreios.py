@@ -3,7 +3,7 @@ precoTotal = 0
 sedexCont = 0
 pesoTotal = 0
 arrecadado = 0
-for i in range(3):
+for i in range(50):
     item = str(input('Digite o tipo de item (pacote ou documento):\n'))
     if bibliotecaCorreios.validaTipoItem(item):
 
@@ -26,7 +26,7 @@ for i in range(3):
                         sedexCont += 1
                     precoTotal += bibliotecaCorreios.calculaCustoEntrega(entrega)
 
-                    print('Total a pagar: R${}'.format(precoTotal))
+                    print('Total a pagar: R${}\n\n'.format(precoTotal))
                     arrecadado += precoTotal
                     precoTotal = 0
                 else:
