@@ -34,7 +34,7 @@ def calculaCustoItem(gramas, item):
 
 def validaEmbalagem(embalagem):
     embalagem = str.lower(embalagem)
-    if embalagem == pequena or embalagem == media or embalagem == grande:
+    if embalagem == pequena or embalagem == media or embalagem == 'média' or embalagem == grande:
         return True
     else:
         return False
@@ -48,20 +48,21 @@ def calculaCustoEmbalagem(embalagem):
         precoEmbalagem = 7
 
     else:
-        preco = 10
+        precoEmbalagem = 10
     return precoEmbalagem
 
 def validaEntrega(entrega):
-    entrega = str.lower(entrega)
-    if entrega == normal or entrega == sedex or entrega == sedex10:
+    entrega = str.lower(entrega).strip( )
+    if entrega == normal or entrega == sedex or entrega == sedex10 or entrega == 'sedex 10':
         return True
     else:
         return False
 
 def calculaCustoEntrega(entrega):
+
     if entrega == sedex:
         precoEntrega = 5
-    elif entrega == sedex10:
+    elif entrega == sedex10 or entrega == 'sedex 10':
         precoEntrega = 8
     else:
         precoEntrega = 0
