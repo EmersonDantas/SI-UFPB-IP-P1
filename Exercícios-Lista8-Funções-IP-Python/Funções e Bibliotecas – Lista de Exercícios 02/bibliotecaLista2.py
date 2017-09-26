@@ -1,24 +1,18 @@
-listaAOPT = []
-
-def adicionarValores(listaAdd):
-
-    listaAOPT.append(listaAdd)
-
-def consultaPreco(titulo):
-    titulo = str.lower(titulo)
+def consultaPreco(obra,listaAOPT):
+    obra = str.lower(obra)
 
     for index in listaAOPT:
-        if titulo == index[0]:
+        if obra == index[1]:
             return index[2]
 
-def consultaArtista(obra):
+def consultaArtista(obra,listaAOPT):
 
     obra = str.lower(obra)
     for index in listaAOPT:
         if obra == index[1]:
             return index[0]
 
-def consultaQuantObras(artista):
+def consultaQuantObras(artista,listaAOPT):
 
     cont = 0
     artista = str.lower(artista)
@@ -28,7 +22,7 @@ def consultaQuantObras(artista):
 
     return cont
 
-def consultaTipo(obra):
+def consultaTipo(obra,listaAOPT):
     obra = str.lower(obra)
 
     for index in listaAOPT:
