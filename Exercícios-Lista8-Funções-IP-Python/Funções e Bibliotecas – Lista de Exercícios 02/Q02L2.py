@@ -5,7 +5,7 @@ listaAdd = []
 listaTemp =[]
 perguntas = ['Digite o nome do artista:\n','Digite o nome da obra:\n','Digite o preço da obra:\n','Digite o tipo de obra:\n']
 
-for i in range(2):
+for i in range(60):
     for n in range(len(perguntas)):
         entrada = input(perguntas[n])
         listaTemp.append(entrada)
@@ -18,4 +18,4 @@ for i in range(2):
 
     listaTemp = []
 
-print('O preço total das obras de Leonado resende é R${}'.format(total))
+print('O preço total das obras de Leonado resende é R${:.2f}'.format(total))
