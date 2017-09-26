@@ -1,34 +1,28 @@
-listaAOP = [['vitas','obra1',90,'quadro'], ['vitas','obra2',100,'escultura'],
-            ['irineu', 'obra3',123,'escultura'], ['irineu','obra4',1234,'quadro'],['leonardo resende','obradele',1000,'quadro']]
+listaAOPT = []
 
-def adicionarValores(artista,obra,preco,tipo):
+def adicionarValores(listaAdd):
 
-    listaAOP.append(artista,obra,preco,tipo)
+    listaAOPT.append(listaAdd)
 
 def consultaPreco(titulo):
     titulo = str.lower(titulo)
 
-    for index in listaAOP:
+    for index in listaAOPT:
         if titulo == index[0]:
-            preco = index[2]
-
-    return preco
+            return index[2]
 
 def consultaArtista(obra):
 
     obra = str.lower(obra)
-    for index in listaAOP:
+    for index in listaAOPT:
         if obra == index[1]:
-            artista = index[0]
-
-    return artista
+            return index[0]
 
 def consultaQuantObras(artista):
 
     cont = 0
-
     artista = str.lower(artista)
-    for index in listaAOP:
+    for index in listaAOPT:
         if artista == index[0]:
             cont += 1
 
@@ -37,9 +31,6 @@ def consultaQuantObras(artista):
 def consultaTipo(obra):
     obra = str.lower(obra)
 
-    for index in listaAOP:
+    for index in listaAOPT:
         if obra == index[1]:
-            tipo = index[3]
-
-    return tipo
-
+            return index[3]

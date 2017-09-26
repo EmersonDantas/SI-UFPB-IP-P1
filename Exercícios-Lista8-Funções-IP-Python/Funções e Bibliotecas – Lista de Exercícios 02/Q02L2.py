@@ -1,14 +1,24 @@
 import bibliotecaLista2
 
-for i in range(5):
+total = 0
+listaAdd = []
+listaTemp =[]
+perguntas = ['Digite o nome do artista:\n','Digite o nome da obra:\n','Digite o preço da obra:\n','Digite o tipo de obra:\n']
 
-    artista = str.lower(input('Digite o nome do artista:\n'))
-    obra = str.lower(input('Digite o nome da obra de {}:\n'.format(artista)))
-    preco = float(input('Digite o preço da obra {}:\n'.format(obra)))
-    tipo = str.lower('Digite o tipo de obra:\n')
+for i in range(2):
 
-    bibliotecaLista2.adicionarValores(artista,obra,preco,tipo)
+    for n in range(len(perguntas)):
 
-quantidade = bibliotecaLista2.consultaQuantObras(artista)
-preco = bibliotecaLista2.consultaPreco(artista)
-print(preco)
+        entrada = input(perguntas[n])
+        listaTemp.append(entrada)
+
+    listaAdd.append(listaTemp)
+
+    if listaTemp[0] == 'leonardo resende':
+
+        preco = int(listaAdd[i][2])
+        total += preco
+
+    listaTemp = []
+
+print('O preço total das obras de Leonado resende é R${}'.format(total))
