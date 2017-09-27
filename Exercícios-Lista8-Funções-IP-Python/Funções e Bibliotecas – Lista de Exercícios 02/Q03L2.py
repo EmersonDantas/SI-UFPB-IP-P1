@@ -6,13 +6,16 @@ quadro = 0
 escultura = 0
 for i in range(50):
     for n in range(len(perguntas)):
-        entrada = input(perguntas[n])
+        if n!= [2]:
+            entrada = str(input(perguntas[n]))
+        else:
+            entrada = float(input(perguntas[n]))
         listaTemp.append(entrada)
 
-    if listaTemp[-1] == 'quadro':
+    if str.lower(listaTemp[3]) == 'quadro':
         quadro += 1
 
-    elif listaTemp[-1] == 'escultura':
+    elif str.lower(listaTemp[3]) == 'escultura':
         escultura += 1
 
     listaAdd.append(listaTemp)
