@@ -12,19 +12,19 @@ while continuar == 'sim':
                               '===>'))
 
     if entrada == 'a': #Procurar um artista
-        obra = str.lower(input('Digite o nome da obra:\n'))
+        obra = str(input('Digite o nome da obra:\n'))
         resultado = ('O(a) artista da obra {} é {}.'.format(obra,bibliotecaLista2.consultaArtista(obra,listaAOPT)))
 
     elif entrada == 'b': #Saber quantas obras um dado artista tem
-        artista = str.lower(input('Digite o nome do artista:\n'))
+        artista = str(input('Digite o nome do artista:\n'))
         resultado = ('O(a) artista {} possui {} obras.'.format(artista,bibliotecaLista2.consultaQuantObras(artista,listaAOPT)))
 
     elif entrada == 'c': #Consulta de preço
-        obra = str.lower(input('Digite o nome da obra:\n'))
+        obra = str(input('Digite o nome da obra:\n'))
         resultado = ('O preço da obra {} é R${:.2f}'.format(obra,bibliotecaLista2.consultaPreco(obra,listaAOPT)))
 
     elif entrada == 'd': #Consulta de tipo
-        tipo = str.lower(input('Digite o nome da obra:\n'))
+        tipo = str(input('Digite o nome da obra:\n'))
         resultado = ('{} é um(a) {}.'.format(tipo,bibliotecaLista2.consultaTipo(tipo,listaAOPT)))
 
     else:
