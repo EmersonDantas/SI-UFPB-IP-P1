@@ -7,13 +7,15 @@ perguntas = ['Digite o nome do artista:\n','Digite o nome da obra:\n','Digite o 
 
 for i in range(60):
     for n in range(len(perguntas)):
-        entrada = input(perguntas[n])
+        if n!= [2]:
+            entrada = str(input(perguntas[n]))
+        else:
+            entrada = float(input(perguntas[n]))
         listaTemp.append(entrada)
-
     listaAdd.append(listaTemp)
 
-    if listaTemp[0] == 'leonardo resende':
-        preco = int(listaAdd[i][2])
+    if str.lower(listaTemp[0]) == 'leonardo resende':
+        preco = float(listaAdd[i][2])
         total += preco
 
     listaTemp = []
