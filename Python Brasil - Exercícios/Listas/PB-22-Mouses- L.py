@@ -21,5 +21,3 @@ print('Quantidade de mouses: {}\n'
 for i in range(len(defeitos)):
           print('{}-{} - {} - {:.0f}%'
                 .format(i+1,defeitos[i],situacao[i],situacao[i]*100/sum(situacao)))
-            
-            
