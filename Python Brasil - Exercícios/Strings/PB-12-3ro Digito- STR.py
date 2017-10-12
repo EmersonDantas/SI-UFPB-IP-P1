@@ -17,4 +17,4 @@ elif len(numero.replace('-','')) == 8:
     print(numero)
 
 else:
-    print('Numero inválido')
+    print('Número inválido')
