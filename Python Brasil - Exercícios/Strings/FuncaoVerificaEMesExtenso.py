@@ -6,7 +6,7 @@ def verificaData(dia,mes,ano):
                 if dia > 1 and dia <= calendario[mes-1][1] and ano > 0:
                         return [dia,calendario[mes-1][0],ano]
                 else:
-                       return ['null','null','null'] 
+                       return ['null','null','null']
         
         else:
                 return ['null','null','null']
