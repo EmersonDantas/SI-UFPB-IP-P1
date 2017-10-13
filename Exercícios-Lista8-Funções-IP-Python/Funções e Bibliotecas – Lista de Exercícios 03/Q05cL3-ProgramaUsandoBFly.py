@@ -1,7 +1,7 @@
 import bibliotecaFly
 precoTr = 0
 contF = 0
-for i in range(3):
+for i in range(80):
     destino = str.lower(input('Qual o destino:\nNatal(Diurno),Fortaleza(Noturno) ou Recife(Diurno,Noturno):\n'))
     turno = str.lower(input('Qual o turno:\n'))
     if bibliotecaFly.validaDadosVoo(destino,turno):
