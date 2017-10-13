@@ -1,2 +1,2 @@
 entrada = str(input('Digite uma palavra:\n'))
-print(entrada[::-1])
+print(str.upper(entrada[::-1]))
