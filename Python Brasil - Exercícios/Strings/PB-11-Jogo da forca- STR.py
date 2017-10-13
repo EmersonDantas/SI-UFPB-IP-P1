@@ -13,7 +13,9 @@ def visual():
     for a in range(len(tracos)):
         print(tracos[a],end=' ')
     print()
-        
+
+print('Jogo da forca')
+
 while erros != 0:
     tentativa = str.upper(input('Qual o seu palpite:\n'))
 
@@ -23,12 +25,14 @@ while erros != 0:
                 tracos[i] = tentativa
                 usados.append(tentativa)
                 acertos += 1
+
         print('\nPARABÉNS, está quase lá!\nA palavra é:')
         visual()
-        
+
         if acertos == len(palavra):
             print('\nVocê acertou a palavra!')
             break
+
     else:
         erros -= 1
         print('Você errou!\nVocê pode errar mais {} vezes.\n'.format(erros))
