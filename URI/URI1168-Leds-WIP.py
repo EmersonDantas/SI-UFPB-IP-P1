@@ -1,7 +1,3 @@
-'''nome = 'kkk eae men'
-lista = list(nome)
-print('#'.join(lista))'''
-
 N = int(input())
 for i in range(N):
     soma = 0
