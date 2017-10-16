@@ -8,5 +8,5 @@ for i in range(100):
     lista.append(dado)
     valores[dado-1] += 1
 
-for a,fance in enumerate(valores):
+for a,face in enumerate(valores):
     print('{} dados de face número {}'.format(face,a+1))
