@@ -1,7 +1,6 @@
 res = 1
 Sos = ['Windows Server','Unix','Linux','Netware','Mac OS','Outro']
 lisPont = [0,0,0,0,0,0]
-lisRes = []
 while res != 0:
     res = int(input('Qual o melhor Sistema Operacional para uso em servidores?\n'
                     '0- para parar\n'
@@ -12,7 +11,6 @@ while res != 0:
                     '5- Mac OS\n'
                     '6- Outro\n'))
     if res != 0:
-        lisRes.append(res)
         lisPont[res-1] += 1
 
     print()
