@@ -30,7 +30,7 @@ botao1.place(x = 25, y = 70)
 
 #Binário
 botao2 = Button(janela, width = 19, text = 'Binário', fg = 'green', bg = 'black')
-botao2['command'] = partial(binarioFlutuanteDecimal, entrada, resultado)
+botao2['command'] = partial(decimalFlutuanteBinario, entrada, resultado)
 botao2.place(x = 25, y = 100)
 
 #Hexadecimal
