@@ -1,4 +1,3 @@
-resultado = 0
 def binarioFlutuanteDecimal(lista, resultado):
 	lista = lista.get()
 	soma=0
