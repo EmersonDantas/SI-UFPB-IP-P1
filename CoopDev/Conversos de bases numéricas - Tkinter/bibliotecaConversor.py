@@ -7,26 +7,29 @@ def binarioFlutuanteDecimal(lista):
 	ListaFlut=[]
 	lista.reverse()
 	ponto=False
+	
 	for x,i in enumerate(lista):
 		if i == "." or i == ",":
 			listaFlut=lista[:x]
 			lista=lista[x+1:]
 			ponto=True
 			break
+
 	if ponto == True:
 		x=len(listaFlut)
 		for i in listaFlut:
-		  if i == "1":
-		    flut+=int(i)*(1/(2**x))
+			if i == "1":
+			  flut+=int(i)*(1/(2**x))
+
 		x-=1
+
 	for x,i in enumerate(lista):
 	  if i == "1":
 	    soma+=int(i)*2**x
-	res = soma+flut
-	resultado['text'] = res
-
+	resultado['text'] = soma+flut
+	
 def decimalFlutuanteBinario(lista):
-        lista = lista.get()
+	lista = lista.get()
 	ponto = False
 	for x,i in enumerate(lista):
 		if i == "." or i == ",":
@@ -34,13 +37,15 @@ def decimalFlutuanteBinario(lista):
 			lista=lista[:x]
 			ponto=True
 			break
+
 	quant=10**len(listaFlut)
 	listaFlut=float(listaFlut)/quant
 	vetor2=[]
+
 	if ponto == True:
-		fim = True
 		peg=int(listaFlut)
-#		for i in range(8):
+
+
 		while True:
 			listaFlut=listaFlut*2
 			peg=int(listaFlut)
@@ -50,19 +55,22 @@ def decimalFlutuanteBinario(lista):
 				vetor2.append(str(peg))
 				inti = int(listaFlut)
 				listaFlut -= inti
+
 			if listaFlut == 0:
 				break
+
 	vet = "".join(vetor2)
 	lista = int(lista)
 	vetor = []
+	
 	while True:
 		resto = lista%2
 		lista=lista//2
 		vetor.append(str(resto))
+
 		if lista==1 or lista==0:
 			vetor.append(str(lista))
 			vetor.reverse()
 			decimal="".join(vetor)
 			res = decimal+"."+vet
 			resultado['text'] = res
-
