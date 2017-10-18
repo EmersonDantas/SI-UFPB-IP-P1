@@ -31,21 +31,17 @@ def binarioFlutuanteDecimal(lista, resultado):
 def decimalFlutuanteBinario(lista, resultado):
 	lista = lista.get()
 	ponto = False
+	vetor2 = []
 	for x,i in enumerate(lista):
 		if i == "." or i == ",":
 			listaFlut = lista[x+1:]
 			lista = lista[:x]
 			ponto = True
 			break
-
-	quant = 10**len(listaFlut)
-	listaFlut = float(listaFlut)/quant
-	vetor2 = []
-
 	if ponto == True:
+		quant = 10**len(listaFlut)
+		listaFlut = float(listaFlut)/quant
 		peg = int(listaFlut)
-
-
 		while True:
 			listaFlut = listaFlut*2
 			peg = int(listaFlut)
@@ -73,4 +69,7 @@ def decimalFlutuanteBinario(lista, resultado):
 			vetor.reverse()
 			decimal="".join(vetor)
 			res = decimal+"."+vet
-			resultado['text'] = res
+			if ponto == True:
+				resultado['text'] = res
+			else:
+				resultado['text'] = decimal
