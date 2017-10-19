@@ -59,8 +59,10 @@ def binarioToDecimal(entrada, resultado):
 	for valor in verificaNum:
 		if valor != '1' and valor != '0':
 			verifica = False
+			break
 		else:
 			verifica = True
+			
 
 
 	if verificaNum.isdigit() and verifica:

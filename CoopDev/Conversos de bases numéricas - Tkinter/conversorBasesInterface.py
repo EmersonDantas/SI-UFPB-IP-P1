@@ -45,7 +45,7 @@ botao4['command'] = partial(decimalToBinario, entrada, resultado)
 botao4.place(x = 44, y = 160)
 
 #MAIN
-dev = Label(janela, font = ('Palatino Linotype', 6), bg = 'red', text = 'Desenvolvido por: Emerson Dantas. GitHub: emersondantas Email: emerson.ruan@dce.ufpb.br')
-dev.place(x = 1, y = 260)
-janela.geometry('343x275')
+#dev = Label(janela, font = ('Palatino Linotype', 6), bg = 'red', text = 'Desenvolvido por: Emerson Dantas. GitHub: emersondantas Email: emerson.ruan@dce.ufpb.br')
+#dev.place(x = 1, y = 260)
+janela.geometry('343x270')
 janela.mainloop()
