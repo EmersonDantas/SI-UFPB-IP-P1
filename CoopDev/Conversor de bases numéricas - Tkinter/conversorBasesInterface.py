@@ -14,8 +14,8 @@ guia = Label(janela, font = ('Arial', 10, 'bold'), text = 'Digite o número e cl
 guia.place(x = 30, y = 1)
 
 #Input
-entrada = Entry(janela, bd = 10, width = 39, fg = 'blue' , bg = 'grey')
-entrada.place(x = 43, y = 29)
+entrada = Entry(janela, bd = 10, width = 27, fg = 'blue' , bg = 'grey')
+entrada.place(x = 44, y = 29)
 
 #resultado
 lbres = Label(janela, font = ('Palatino Linotype', 15), text = 'Resultado:',fg = 'black')
