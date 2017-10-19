@@ -67,7 +67,7 @@ def binarioToDecimal(entrada, resultado):
 
 	if verificaNum.isdigit() and verifica:
 
-		for a,valor in enumerate(antes):
+		for a,valor in enumerate(antes[::-1]):
 			soma += int(valor) * 2 ** a
 
 		decAntes = soma
