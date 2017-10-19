@@ -33,14 +33,15 @@ botao2 = Button(janela, font = ('Arial', 10, 'bold'), width = 30, text = 'Binár
 botao2['command'] = partial(decimalToBinario, entrada, resultado)
 botao2.place(x = 44, y = 100)
 
-#Hexadecimal
-botao3 = Button(janela, font = ('Arial', 10, 'bold'), width = 30, text = 'Hexadecimal', fg = 'black', bg = 'grey')
+#Octal
+botao3 = Button(janela, font = ('Arial', 10, 'bold'), width = 30, text = 'Octal', fg = 'black', bg = 'grey')
 botao3['command'] = partial(decimalToBinario, entrada, resultado)
 botao3.place(x = 44, y = 130)
 
-#Octal
-botao4 = Button(janela, font = ('Arial', 10, 'bold'), width = 30, text = 'Octal', fg = 'black', bg = 'grey')
+#Hexadecimal
+botao4 = Button(janela, font = ('Arial', 10, 'bold'), width = 30, text = 'Hexadecimal', fg = 'black', bg = 'grey')
 botao4['command'] = partial(decimalToBinario, entrada, resultado)
+
 botao4.place(x = 44, y = 160)
 
 #MAIN
