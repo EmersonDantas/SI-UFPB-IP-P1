@@ -93,6 +93,9 @@ def OctalToDecimal(entrada, resultado):
     soma = 0
     octalValor = '01234567'
 
+    if len(entrada) == 0:
+        verifica = False 
+
     for a in entrada:
         if a not in octalValor:  
             verifica = False
@@ -132,7 +135,10 @@ def HexadecimalToDecimal(entrada, resultado):
     verifica = True
     soma = 0
     diferenca = 0
-    
+
+    if len(entrada) == 0:
+        verifica = False 
+
     for e in entrada:
         for v in hexadecimalList:
             if e != v:
